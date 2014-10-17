@@ -2,6 +2,8 @@
 // Maven specific extensions of bootstrap classes.
 // -----------------------------------------------------
 
+@import "mixins/grid.less";
+
 // Page padding classes.
 // --------------------------------------------------
 
@@ -23,7 +25,11 @@
   /*margin-left: @gridGutterWidth;*/
 /*}*/
 
-/*.registration-page-padding {*/
-  /*.offset(3);*/
-  /*.span(16);*/
-/*}*/
+.registration-page-padding {
+  .make-xs-column-offset(3);
+  .make-xs-column(16);
+}
+
+body.container-lg #container {
+  width: @container-lg;
+}
