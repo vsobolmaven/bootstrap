@@ -307,9 +307,9 @@
 //## Define your custom responsive grid.
 
 //** Number of columns in the grid.
-@grid-columns:              12;
+@grid-columns:              24;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30px;
+@grid-gutter-width:         0px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
@@ -327,7 +327,7 @@
 @container-sm:                 @container-tablet;
 
 // Medium screen / desktop
-@container-desktop:            ((940px + @grid-gutter-width));
+@container-desktop:            ((964px + @grid-gutter-width));
 //** For `@screen-md-min` and up.
 @container-md:                 @container-desktop;
 
@@ -849,3 +849,7 @@
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
+
+// FIXME
+@linkColor:             #679147;
+@linkColorHover:        #679147;
