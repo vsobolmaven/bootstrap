@@ -7,23 +7,16 @@
 // Page padding classes.
 // --------------------------------------------------
 
-/*.span (@columns) {*/
-  /*width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));*/
-/*}*/
+.default-page-padding {
+  .make-xs-column-offset(1);
+  .make-xs-column(22);
+}
 
-/*.offset (@columns) {*/
-  /*margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns + 1));*/
-/*}*/
-
-/*.default-page-padding {*/
-  /*.offset(1);*/
-  /*.span(22);*/
-/*}*/
-
-/*.wide-page-padding {*/
-  /*.span(24);*/
+.wide-page-padding {
   /*margin-left: @gridGutterWidth;*/
-/*}*/
+  .make-xs-column-offset(1);
+  .make-xs-column(24);
+}
 
 .registration-page-padding {
   .make-xs-column-offset(3);

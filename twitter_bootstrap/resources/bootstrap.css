@@ -1684,20 +1684,25 @@ hr {
   position: fixed;
 }
 /*@import "responsive-utilities.less";*/
-/*.span (@columns) {*/
-/*width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));*/
-/*}*/
-/*.offset (@columns) {*/
-/*margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns + 1));*/
-/*}*/
-/*.default-page-padding {*/
-/*.offset(1);*/
-/*.span(22);*/
-/*}*/
-/*.wide-page-padding {*/
-/*.span(24);*/
-/*margin-left: @gridGutterWidth;*/
-/*}*/
+.default-page-padding {
+  position: relative;
+  float: left;
+  width: 91.66666667%;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 4.16666667%;
+}
+.wide-page-padding {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0;
+  /*margin-left: @gridGutterWidth;*/
+  margin-left: 4.16666667%;
+}
 .registration-page-padding {
   position: relative;
   float: left;
