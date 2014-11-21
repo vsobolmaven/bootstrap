@@ -43,3 +43,6 @@ bower_components
 
 # Python files
 *.pyc
+
+src/dist
+twitter_bootstrap.egg-info

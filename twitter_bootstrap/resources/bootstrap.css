@@ -1700,8 +1700,6 @@ hr {
   min-height: 1px;
   padding-right: 0;
   padding-left: 0;
-  /*margin-left: @gridGutterWidth;*/
-  margin-left: 4.16666667%;
 }
 .registration-page-padding {
   position: relative;
