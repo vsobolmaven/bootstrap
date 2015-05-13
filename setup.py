@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.maven'
+version = '0.1.2.maven'
 
 
 def read(*rnames):
